@@ -48,3 +48,8 @@ button{
 .button:hover{
     background:#163aa5;
 }
+
+img{
+    width:150px;
+    border-radius:50%;
+}
