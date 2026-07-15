@@ -1,55 +1,90 @@
-body{
-    background:rgb(238, 200, 95);
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
     font-family:Arial, sans-serif;
+}
+
+body{
+    background:#ffd400;
     display:flex;
     justify-content:center;
     align-items:center;
-    height:100vh;
-    margin:0;
+    min-height:100vh;
+    padding:20px;
 }
 
-.profile{
-    background:rgb(0, 60, 255);
-    padding: 50px;
-    border-radius:15px;
-    box-shadow:0 10px 30px rgba(0,0,0,.1);
-    width:490px;
+.card{
+    width:420px;
+    background:#0d47a1;
+    color:white;
+    border-radius:20px;
+    padding:30px;
+    text-align:center;
+    box-shadow:0 10px 30px rgba(0,0,0,.3);
+}
+
+.profile img{
+    width:180px;
+    height:180px;
+    border-radius:50%;
+    object-fit:cover;
+    border:5px solid white;
+    margin-bottom:20px;
+}
+
+.hello{
+    font-size:18px;
+    margin-bottom:10px;
 }
 
 h1{
-    color:#f0f0f0;
+    font-size:38px;
+    margin-bottom:10px;
 }
 
-p{
-    color:#fffefe;
-    line-height:1.6;
+.profession{
+    color:#ffd54f;
+    font-size:20px;
+    margin-bottom:20px;
+    font-weight:bold;
 }
 
-button{
-    background:#f6dd26;
-    color:white;
+hr{
     border:none;
-    padding:12px 20px;
-    border-radius:10px;
-    cursor:pointer;
+    border-top:1px solid rgba(255,255,255,.3);
+    margin:20px 0;
+}
+
+.info,
+.about{
+    list-style:none;
+    text-align:left;
+}
+
+.info li,
+.about li{
+    margin:12px 0;
     font-size:16px;
 }
 
 .button{
     display:inline-block;
-    background:#f77d7d;
+    margin-top:25px;
+    padding:14px 28px;
+    background:#ff4081;
     color:white;
     text-decoration:none;
-    padding:12px 20px;
-    border-radius:10px;
-    font-weight:bold;
+    border-radius:30px;
+    transition:.3s;
 }
 
 .button:hover{
-    background:#163aa5;
+    background:#e73370;
 }
 
-img{
-    width:150px;
-    border-radius:50%;
+.footer{
+    margin-top:25px;
+    font-size:13px;
+    opacity:.7;
 }
